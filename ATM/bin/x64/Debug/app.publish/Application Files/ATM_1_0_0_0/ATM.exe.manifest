@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ATM.exe" version="1.0.0.0" publicKeyToken="022cdda2265a5487" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ATM" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="ATM.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ATM.exe" size="302592">
+      <assemblyIdentity name="ATM" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9PcE3oKAw+nLiTmvyOwwA0hIWRNjxP0j9WgRO4Yu67k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.dll" size="967168">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.79.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gq7Pm5Bk+6L9CNhZtmmD7WM4vKDjS4gn9kpopHtfLc8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ATM.exe.config" size="167">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KMpFxPeEUhuZZwIkzmM2feuRSYEXLF3ODklvcvx9QCo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MAITALATA\HP" issuerKeyHash="65fa93b3b3cec6382d3030ae4fbe78f8e77b975a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bjxXWtRYkOsGl+q+a5KuGpBMTm/JWo+pcmyfWK6Bd/E=</DigestValue></Reference></SignedInfo><SignatureValue>N/vSVnNCnFZLARCBh2a9bu5o3PD/Gr/mxmm2Ehzl7nHeqSuuaoD3KPOHZQx3mVEa8WAaA4mClT/+A/n2d/TQsDeQ7A9iAytsfeppTs+v9YF9oHrtbt4ru8Ho+mqL6Kwc+YW3quOFEAmCAo152XL5Is4R3ISN0YH0KXWPdUqB6ks=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nUfMFHOEwPOecIOoaxS8z3vyUdKDt2MMDMketeZZYTrXM9pUlHWu/R7Cqkf4fizkEZbzEoa7svkyy3YuJDOZp9UsR+3OqMThnqvOgmupyJ3dLe90NvK9bFbmWThkC6cVIWWkJlH25LibCZAULBVii3Hj2yIUKJjj/8KMbLxyg2c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f17781ae589f6c72a98f5ac96f4e4c901aae926bbeea9706eb9058d45a573c6e" Description="" Url=""><as:assemblyIdentity name="ATM.exe" version="1.0.0.0" publicKeyToken="022cdda2265a5487" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MAITALATA\HP</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>CCtjARDZLuKKbOW9lpYxwktTCkM1rSF9N7ABIsqx9GE=</DigestValue></Reference></SignedInfo><SignatureValue>dAsmFQAe5Rp36pQ4Dy7jPS8y1fFmUbjds3Wt34VXNBXFWQpa9TA4Vg5l6jBYjleA8e0B+s+mjhDZZuih8T35fc4PORaQ1+ts2Hv5gRW/UkLe9J+MkS/x3bQZVyTT+9iPeCrBZ+lhPKZbwSefPfyzVJEM0mHv05bE8gsdHJtqusY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nUfMFHOEwPOecIOoaxS8z3vyUdKDt2MMDMketeZZYTrXM9pUlHWu/R7Cqkf4fizkEZbzEoa7svkyy3YuJDOZp9UsR+3OqMThnqvOgmupyJ3dLe90NvK9bFbmWThkC6cVIWWkJlH25LibCZAULBVii3Hj2yIUKJjj/8KMbLxyg2c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQMjcWejUPGapEx3yMqGMvSDANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgATQBBAEkAVABBAEwAQQBUAEEAXABIAFAwHhcNMTkwMzA0MTE0MzAzWhcNMjAwMzAzMTc0MzAzWjAjMSEwHwYDVQQDHhgATQBBAEkAVABBAEwAQQBUAEEAXABIAFAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ1HzBRzhMDznnCDqGsUvM978lHSg7djDAzJHrXmWWE61zPaVJR1rv0ewqpH+H4s5BGW8xKGu7L5Mst2LiQzmafVLEftzqjE4Z6rzoJrqcid3S3vdDbyvWxW5lk4ZAunFSFlpCZR9uS4mwmQFCwVYotx49siFCiY4//CjGy8coNnAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAkWTmrbiuv8Jr4J76rKRXLUIk5Td38aZ7m5vFxJ/LkLbOonhE42cXR/X2Fu7FA5QCdjW+YP8pUZCU1ELFBseS3lxYb6WyudRclbmnO4TPdg2Guid7g4hGiTP+k3CQqc7TvUISe2ybB1fDgP+qEvGWOPsklL9azYTFFf5fxbi/t3I=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
